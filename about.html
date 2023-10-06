@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/about4.avif" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam excepturi consectetur laborum placeat officia, amet, possimus ratione ipsum est assumenda. Vel fugit velit odio assumenda at ea natus maxime, veniam saepe obcaecati autem nisi sed omnis in ipsa placeat nemo quibusdam reiciendis consectetur? Voluptatem, corporis. Itaque doloribus ea assumenda nulla nisi ad, sed illo quaerat corrupti iste blanditiis! Vero quo enim quas? Cum quas ab, sunt nihil aspernatur quibusdam dignissimos alias nobis vel, tempore vero necessitatibus iusto explicabo, ad quasi quae? Iste inventore velit a quibusdam ullam, soluta consequatur odit doloribus magnam, explicabo officiis? Labore, in? Tenetur, ex facilis?</p>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+    <p class="tab-links" onclick="opentab('skill')">Professional Skills</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>HTML/CSS</span><br></li>
+        <li><span>JAVASCRIPT</span><br></li>
+        <li><span>BOOTSTARP</span><br></li>
+        <li><span>C</span><br></li>
+    </ul>
+</div>
+<div class="tab-contents" id="skill">
+    <ul>
+        <li><span>COMMUNICATION</span><br></li>
+        <li><span>TEAM MANAGEMENT</span><br></li>
+        <li><span>DECISION MAKING</span><br></li>
+        
+    </ul>
+</div>
+<div class="tab-contents" id="education">
+">
+    <ul>
+        <li><span>2019 - 2023</span><br>Bachelor Of Technology in IT From Government Engineering College Idukki<br></li>
+        <li><span>2017 - 2018</span><br>Plus Two from GHSS Niramruthoor</li>
+        <li><span>2015 - 2016</span><br>SSLC From Amrita Vidyalayam Tanur</li>
+      
+    </ul>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            
+        }
+    </script>
+</body>
+</html>
