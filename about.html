@@ -14,13 +14,15 @@
         <div class="container">
             <nav>
        
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#services">WORKS</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="row">
                 <div class="about-col-1">
@@ -93,7 +95,7 @@
 <!-- portfolio -->
 
 
-<div class="portfolio">
+<div id="portfolio">
     <div class="container">
         <h1 class="sub-title">PORTFOLIO</h1>
         <div class="work-list">
@@ -142,13 +144,14 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
                 </div>
+                <a href="" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your name" required>
                     <input type="email" name="Email" placeholder="Your email" required>
                     <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
 
             </div>
@@ -174,6 +177,15 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
             
+        }
+    </script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
     </script>
 </body>
