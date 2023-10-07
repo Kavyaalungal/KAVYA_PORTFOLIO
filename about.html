@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./about.css">
+    <script src="https://kit.fontawesome.com/76113dabc3.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="about">
         <div class="container">
+            <nav>
+       
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
             <div class="row">
                 <div class="about-col-1">
                     <img src="./images/about4.avif" alt="">
@@ -50,6 +62,105 @@
             </div>
         </div>
     </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Smart Door Lock</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium alias est voluptate consequatur, placeat iusto doloribus ipsam mollitia, dolore tempore ea quod! Voluptate cum, maxime enim magni veniam saepe. Voluptatum aliquid similique, iusto, voluptatibus soluta recusandae ea provident consectetur facere ducimus earum autem. Ut ipsam autem ipsum quaerat aperiam.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>NLI in Malayalam for SQL Databases</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium alias est voluptate consequatur, placeat iusto doloribus ipsam mollitia, dolore tempore ea quod! Voluptate cum, maxime enim magni veniam saepe. Voluptatum aliquid similique, iusto, voluptatibus soluta recusandae ea provident consectetur facere ducimus earum autem. Ut ipsam autem ipsum quaerat aperiam.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dumpster-fire"></i>
+                    <h2>Ecommerce Website</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium alias est voluptate consequatur, placeat iusto doloribus ipsam mollitia, dolore tempore ea quod! Voluptate cum, maxime enim magni veniam saepe. Voluptatum aliquid similique, iusto, voluptatibus soluta recusandae ea provident consectetur facere ducimus earum autem. Ut ipsam autem ipsum quaerat aperiam.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- portfolio -->
+
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">PORTFOLIO</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work4.avif" alt="">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, unde cupiditate? Recusandae architecto modi adipisci laborum quaerat voluptates vitae? Esse numquam tempora maiores non vero autem at sapiente illum excepturi?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work1.avif" alt="">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, unde cupiditate? Recusandae architecto modi adipisci laborum quaerat voluptates vitae? Esse numquam tempora maiores non vero autem at sapiente illum excepturi?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work5.avif" alt="">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, unde cupiditate? Recusandae architecto modi adipisci laborum quaerat voluptates vitae? Esse numquam tempora maiores non vero autem at sapiente illum excepturi?</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>kavyaalungal691@gmail.com</p>
+                <p> <i class="fa-solid fa-phone-volume"></i>0000000000</p>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
     <script>
         let tablinks = document.getElementsByClassName("tab-links");
         let tabcontents = document.getElementsByClassName("tab-contents");
@@ -60,8 +171,8 @@
             for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab")
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
             
         }
     </script>
